@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-dark-blue-main-BG);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 25px;
+    max-width: 350px;
+    padding: 25px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.image-container #nft{
+    border-radius: 15px;
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.description{
+    color: var(--Soft-blue);
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.price-btc{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--Cyan);
+}
+
+.times-remaining{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--Soft-blue);
+}
+
+#btc-ico, #clock{
+    padding-right: 10px;
+    object-fit: cover;
+}
+
+.line{
+    border: 1px solid var(--Very-dark-blue-line);
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+#author-image{
+    width: 35px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+}
+
+.author-name{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--White);
+    padding-left: 1rem;
+}
+
+span{
+    color: var(--Soft-blue);
+    padding-right: 5px;
+}
